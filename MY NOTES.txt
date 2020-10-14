@@ -1,0 +1,32 @@
+in server's package.json
+
+need it to be like this for heroku deployment:
+
+
+  "scripts": {
+    "build": "babel . --ignore node_modules,build --out-dir build",
+    "start": "nodemon -r babel-register index.js",
+    "start:prod": "node build/index.js"
+  },
+
+
+**only works without '-r babel-register'
+currently for local:
+
+
+  "scripts": {
+    "build": "babel . --ignore node_modules,build --out-dir build",
+    "start": "nodemon index.js",
+    "start:prod": "node build/index.js"
+  },
+
+
+complains about userType not defined when identifying who is logged in, google or local user
+
+
+TO START:
+root folder > yarn start start:dev
+
+local login
+	UN: user
+	PW: password

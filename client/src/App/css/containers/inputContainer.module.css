@@ -1,0 +1,8 @@
+.inputContainer {
+  width: 200px;
+  margin: 0 0 10px 0;
+}
+
+.inputContainer > input {
+  width: 100%;
+}

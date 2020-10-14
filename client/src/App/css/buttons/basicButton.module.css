@@ -1,0 +1,8 @@
+.basicButton {
+  width: 207px;
+  text-align: left;
+}
+
+.basicButton:hover {
+  color: lightslategray;
+}

@@ -1,0 +1,13 @@
+.sekret {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.sekret:hover {
+  background: url('../../assets/images/digikat.png');
+  width: 25px;
+  height: 25px;
+  opacity: 50%;
+  position: relative;
+}

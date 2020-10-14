@@ -1,0 +1,16 @@
+.DS_STORE
+/node_modules/*
+/.vscode/*
+*.env
+.env
+**/node_modules
+
+# production
+build
+
+# misc
+.DS_Store
+.yarnclean
+npm-debug.log
+yarn-error.log
+*.rdb

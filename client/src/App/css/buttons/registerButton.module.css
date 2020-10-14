@@ -1,0 +1,17 @@
+.registerButton {
+  background: url('../../assets/images/registerButtonWht.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  height: 80px;
+}
+
+.registerButton:hover {
+  background: url('../../assets/images/registerButton.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  height: 80px;
+}

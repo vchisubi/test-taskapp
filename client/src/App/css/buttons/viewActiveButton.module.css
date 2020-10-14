@@ -1,0 +1,21 @@
+.viewActiveButton {
+  background: url('../../assets/images/viewActiveWht.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin: 5px 5px 5px 5px;
+  border: none;
+}
+
+.viewActiveButton:hover {
+  background: url('../../assets/images/viewActive.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin: 5px 5px 5px 5px;
+  border: none;
+}

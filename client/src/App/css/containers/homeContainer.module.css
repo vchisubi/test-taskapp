@@ -1,0 +1,24 @@
+@media (min-width: 992px){
+  .homeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .homeContainer > div {
+    opacity: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100vh;
+  }
+
+  .homeContainer > div {
+    opacity: 80%;
+  }
+}

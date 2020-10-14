@@ -1,0 +1,23 @@
+@media (min-width: 992px){
+  .loginContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .loginContainer > div {
+    opacity: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .loginContainer > div {
+    opacity: 80%;
+  }
+}

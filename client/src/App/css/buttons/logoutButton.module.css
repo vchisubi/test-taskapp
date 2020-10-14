@@ -1,0 +1,17 @@
+.logoutButton {
+  background: url('../../assets/images/logoutbuttonWht.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  height: 80px;
+}
+
+.logoutButton:hover {
+  background: url('../../assets/images/logoutbutton.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  height: 80px;
+}

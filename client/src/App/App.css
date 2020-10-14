@@ -1,0 +1,174 @@
+/* body {
+  background-color: #282c34;
+  background-image: url('https://images.pexels.com/photos/2166271/pexels-photo-2166271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-size: 100% 375%;
+  overflow: hidden;
+} */
+
+/* nav {
+  background: #282c34;
+  padding: 5px 200px;
+}
+
+nav ul {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+
+.nav-button {
+  width: 300px;
+  height: 25px;
+  float: center;
+  border: 2px solid gray;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+
+.logreg-button {
+  width: 200px;
+  height: 25px;
+  float: center;
+  border: 2px solid gray;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.todo-list {
+  background-color: white;
+  margin: auto;
+  width: 30%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+      0 1px 1px rgba(0,0,0,0.15),
+      0 10px 0 -5px #eee,
+      0 10px 1px -4px rgba(0,0,0,0.15),
+      0 20px 0 -10px #eee,
+      0 20px 1px -9px rgba(0,0,0,0.15);
+  padding: 10px;
+}
+
+form {
+  padding: 8px 10px 8px 10px;
+  margin: 8px 0px 8px 0px;
+  border: 2px solid #282c34;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px 0;
+  width: 75%;
+  border-bottom: .1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
+}
+
+input {
+  padding: 10px;
+  margin: 2px
+}
+
+input[type=checkbox] {
+  margin-right: 15px;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
+
+.obliterate{
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  padding: 10px 15px 10px 15px;
+}
+
+.obliterate:hover{
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.button-container{
+  width: 40%;
+  padding: 5px 0;
+  margin: auto;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.submit-button{
+  width: 100%;
+  align-self: center;
+  float: center;
+  padding: 10px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.view-button{
+  width: 20%;
+  float: center;
+  padding: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  margin-right: 5px;
+}
+
+button:hover{
+  background: #6495ED;	
+}
+
+.google-button{
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px;
+  background: #282c34;
+  margin: 10 10 10 10px;
+}
+
+.link-button{
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 8px;
+  background: #282c34;
+  margin: auto;
+} */

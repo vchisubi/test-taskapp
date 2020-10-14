@@ -1,0 +1,21 @@
+{
+  "name": "taskapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "engines": {
+    "node": "14.13.1",
+    "yarn": "1.22.5"
+  },
+  "scripts": {
+    "build": "concurrently \"cd client && yarn build\" \"cd server && yarn build\"",
+    "heroku-postbuild": "yarn build",
+    "install": "(cd client && yarn) && (cd server && yarn)",
+    "start": "concurrently \"cd client && set PORT=3000 && yarn start\" \"cd server && set PORT=4002 && yarn start\"",
+    "start:prod": "cd server && yarn start:prod",
+    "start:dev": "concurrently \"cd client && yarn start\" \"cd server && yarn start\""
+  }
+}

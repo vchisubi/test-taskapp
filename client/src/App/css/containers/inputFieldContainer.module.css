@@ -1,0 +1,35 @@
+@media (min-width: 992px){
+  .inputFieldContainer {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 0 10px 0;
+  }
+
+  .inputFieldContainer > form > input {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .inputFieldContainer {
+    display: flex;
+  }
+
+  .inputFieldContainer > form {
+    display: flex;
+    align-items: baseline;
+    width: 60vw;
+    margin: 10px 0 0 0;
+  }
+
+  .inputFieldContainer > form > input {
+    width: 100%;
+    margin: 0 0 0 70px;
+  }
+  
+  .inputFieldContainer > form > button {
+    margin: 10px -70px 0 5px;
+  }
+}

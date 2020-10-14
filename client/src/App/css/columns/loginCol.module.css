@@ -1,0 +1,42 @@
+@media (min-width: 992px){
+  .loginCol1 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: flex-end;
+  }
+  
+  .loginCol2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60%;
+    justify-content: center;
+    color: gray;
+    padding-left: 50px;
+    background-color: lightgray;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .loginCol1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px 0 20px 0;
+    padding: 100px 0 0 50px;
+    justify-content: flex-start;
+  }
+  
+  .loginCol2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    justify-content: center;
+    color: gray;
+    padding: 0px 0px 20px 20px;
+    background-color: lightgray;
+  }
+}

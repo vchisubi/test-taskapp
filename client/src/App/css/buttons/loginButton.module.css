@@ -1,0 +1,17 @@
+.loginButton {
+  background: url('../../assets/images/loginbuttonWht.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  height: 80px;
+}
+
+.loginButton:hover {
+  background: url('../../assets/images/loginbutton.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  height: 80px;
+}
