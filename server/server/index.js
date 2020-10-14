@@ -19,18 +19,18 @@ module.exports = function () {
 
   create = function() {
     // // Serve static files from the React frontend app
-    const staticFiles = express.static(path.join(__dirname, '../../../client'))
+    const staticFiles = express.static(path.join(__dirname, '../../../client/build'))
     server.use(staticFiles)
 
-    // server.get('/', (req, res) => {
-    //   console.log('HOMEPAGE--')
-    //   try {
-    //     // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    //     res.sendFile(path.resolve(__dirname, '../../../client/public', 'index.html'))
-    //   } catch (e) {
-    //     console.log(e)
-    //   }
-    // })
+    server.get('/', (req, res) => {
+      console.log('HOMEPAGE--')
+      try {
+        // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+        res.sendFile(path.resolve(__dirname, '../../../client/public', 'index.html'))
+      } catch (e) {
+        console.log(e)
+      }
+    })
 
     // // Anything that doesn't match the above, send back index.html
     server.get('*', (req, res) => {
