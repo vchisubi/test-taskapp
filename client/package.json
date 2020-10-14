@@ -27,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NODE_PATH=src react-scripts build"
   },
   "proxy": "http://localhost:4002",
   "eslintConfig": {
