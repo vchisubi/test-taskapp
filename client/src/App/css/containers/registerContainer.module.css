@@ -6,7 +6,7 @@
   }
 
   .loginContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 
   .registerContainer {
@@ -16,7 +16,7 @@
   }
 
   .registerContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   .loginContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 
   .registerContainer {
@@ -38,6 +38,6 @@
   }
 
   .registerContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 }

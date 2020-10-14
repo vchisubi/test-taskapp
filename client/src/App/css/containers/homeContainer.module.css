@@ -6,7 +6,7 @@
   }
 
   .homeContainer > div {
-    opacity: 70%;
+    opacity: .7;
   }
 }
 
@@ -19,6 +19,6 @@
   }
 
   .homeContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 }

@@ -54,7 +54,7 @@
     flex-direction: row;
     margin: 0 0 0 256px;
     justify-content: center;
-    opacity: 10%;
+    opacity: .1;
   }
   
   .homeCol3 {

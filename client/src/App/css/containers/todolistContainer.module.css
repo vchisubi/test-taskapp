@@ -15,7 +15,7 @@
       0 20px 1px -9px rgba(0,0,0,0.15);
     padding: 10px;
     margin: 10px;
-    opacity: 75%
+    opacity: .7;
   }
 }
 
@@ -35,6 +35,6 @@
       0 20px 1px -9px rgba(0,0,0,0.15);
     padding: 0 10px 0 10px;
     margin: 20px 0 0 0;
-    opacity: 75%
+    opacity: .7;
   }
 }

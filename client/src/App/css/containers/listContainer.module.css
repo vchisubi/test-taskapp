@@ -7,7 +7,7 @@
   }
 
   .listContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 }
 
@@ -20,6 +20,6 @@
   }
 
   .listContainer > div {
-    opacity: 80%;
+    opacity: .8;
   }
 }
