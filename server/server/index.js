@@ -19,14 +19,14 @@ module.exports = function () {
 
   create = function() {
     // // Serve static files from the React frontend app
-    const staticFiles = express.static(path.join(__dirname, '../../client/build'))
+    const staticFiles = express.static(path.join(__dirname, '../../../client/build'))
     server.use(staticFiles)
     console.log(__dirname)
 
     // // Anything that doesn't match the above, send back index.html
     app.get('*', (req, res) => {
       // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-      res.sendFile(path.resolve(__dirname + '../../client/build/index.html'))
+      // res.sendFile(path.resolve(__dirname + '../../client/build/index.html'))
     })
 
     // For Heroku
