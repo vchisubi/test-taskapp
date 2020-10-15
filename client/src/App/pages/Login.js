@@ -44,6 +44,15 @@ class Login extends Component {
   render () {
     const { loginUsername, loginPassword, redirect } = this.state
 
+    let googleButton
+
+    // if(process.env.NODE_ENV === 'production') {
+    //   googleButton = <a className={google.googleButton} href='https://test-taskapp.herokuapp.com/auth/google' />
+    // } else {
+        googleButton = <a className={google.googleButton} href='/auth/google' />
+    // }
+
+
     if (redirect) {
       return (
         <Redirect to='/list' />
@@ -87,7 +96,8 @@ class Login extends Component {
                 <button className={basic.basicButton} type='submit'>Login</button>
               </form>
               <br />
-              <a className={google.googleButton} href='http://localhost:4002/auth/google' />
+              {googleButton}
+              {/* <a className={google.googleButton} href='http://localhost:4002/auth/google' /> */}
               {/* <a className={google.googleButton} href='http://vchi-todoapp-server.herokuapp.com/auth/google' /> */}
             </div>
           </div>
