@@ -62,6 +62,8 @@ router.get('/google', passport.authenticate('google', {
 }))
 
 router.get('/google/redirect', passport.authenticate('google'), async (req, res) => {
+  console.log('GOOGLE REDIRECT ACHIEVED')
+  console.log(process.env.NODE_ENV)
   try {
     const jwtToken = await tokenUtil.generateAccessToken(req.user)
     // Creates a cookie that store the JSON web token, which lasts 1 hour
@@ -69,7 +71,9 @@ router.get('/google/redirect', passport.authenticate('google'), async (req, res)
 
     // Added for Heroku---------------------------------------------------------------------------------
     if((req.headers['x-forwarded-proto'] !== 'https') && (process.env.NODE_ENV === 'production')) {
+      let redirectURL = 'http://test-taskapp.heroku.com:' + process.env.PORT + '/redirect'
       res.redirect('http://test-taskapp.heroku.com/redirect')
+      res.redirect(redirectURL)
     } else {
         res.redirect('http://localhost:3000/redirect')
     }
