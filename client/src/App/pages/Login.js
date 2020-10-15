@@ -46,11 +46,12 @@ class Login extends Component {
 
     let googleButton
 
-    // if(process.env.NODE_ENV === 'production') {
-    //   googleButton = <a className={google.googleButton} href='https://test-taskapp.herokuapp.com/auth/google' />
-    // } else {
+    if(process.env.NODE_ENV === 'production') {
+      let endpointURL = 'https://test-taskapp.herokuapp.com:' + process.env.PORT + '/auth/google'
+      googleButton = <a className={google.googleButton} href={endpointURL} />
+    } else {
         googleButton = <a className={google.googleButton} href='/auth/google' />
-    // }
+    }
 
 
     if (redirect) {
