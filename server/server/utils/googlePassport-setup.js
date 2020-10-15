@@ -21,9 +21,10 @@ googlePassport.use(
   // clientSecret: keys.google.clientSecret,
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: cbURL
+  callbackURL: cbURL,
   // callbackURL: '/auth/google/redirect'
   //callbackURL: 'http://test-taskapp.herokuapp.com/auth/google/redirect'
+  proxy: true
   }, (accessToken, refreshToken, profile, done) => {
     GoogleUser.findOne({ googleId: profile.id }).then((currentUser) => {
       if(currentUser){
