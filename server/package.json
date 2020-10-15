@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.13.1",
+    "yarn": "1.22.5"
+  },
   "scripts": {
     "build": "babel . --ignore node_modules,build --out-dir build",
     "start": "nodemon -r babel-register index.js",
@@ -35,9 +39,5 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "babel-register": "^6.26.0",
-    "nodemon": "^2.0.5"
   }
 }
