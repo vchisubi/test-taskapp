@@ -47,7 +47,7 @@ class Login extends Component {
     let googleButton
 
     if(process.env.NODE_ENV === 'production') {
-      let endpointURL = 'https://test-taskapp.herokuapp.com:' + process.env.PORT + '/auth/google'
+      let endpointURL = 'http://test-taskapp.herokuapp.com/auth/google'
       googleButton = <a className={google.googleButton} href={endpointURL} />
     } else {
         googleButton = <a className={google.googleButton} href='/auth/google' />
