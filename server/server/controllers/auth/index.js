@@ -69,7 +69,7 @@ router.get('/google/redirect', passport.authenticate('google'), async (req, res)
 
     // Added for Heroku---------------------------------------------------------------------------------
     if((req.headers['x-forwarded-proto'] !== 'https') && (process.env.NODE_ENV === 'production')) {
-      res.redirect('https://test-taskapp.heroku.com/redirect')
+      res.redirect('http://test-taskapp.heroku.com/redirect')
     } else {
         res.redirect('http://localhost:3000/redirect')
     }

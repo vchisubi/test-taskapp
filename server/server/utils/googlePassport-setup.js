@@ -3,11 +3,19 @@ const GoogleStrategy = require('passport-google-oauth20')
 const keys = require('../config/keys')
 const GoogleUser = require('../models/user-model')
 
+let cbURL = '/auth/google/redirect'
+
+if(process.env.NODE_ENV === 'production') {
+  cbURL = 'http://test-taskapp.herokuapp.com' + cbURL
+  console.log(cbURL)
+}
+
 googlePassport.use(
   new GoogleStrategy({
   clientID: keys.google.clientID,
   clientSecret: keys.google.clientSecret,
-  callbackURL: '/auth/google/redirect'
+  callbackURL: cbURL
+  // callbackURL: '/auth/google/redirect'
   //callbackURL: 'http://test-taskapp.herokuapp.com/auth/google/redirect'
   }, (accessToken, refreshToken, profile, done) => {
     GoogleUser.findOne({ googleId: profile.id }).then((currentUser) => {
