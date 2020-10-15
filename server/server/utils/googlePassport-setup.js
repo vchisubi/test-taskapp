@@ -6,6 +6,7 @@ const GoogleUser = require('../models/user-model')
 let cbURL = '/auth/google/redirect'
 
 if(process.env.NODE_ENV === 'production') {
+  console.log(process.env.NODE_ENV)
   cbURL = 'http://test-taskapp.herokuapp.com:' + process.env.PORT + cbURL
   console.log(cbURL)
 }
